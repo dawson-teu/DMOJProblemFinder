@@ -1,0 +1,35 @@
+{
+    "extends": ["airbnb-base", "plugin:import/errors", "plugin:import/warnings", "plugin:promise/recommended",
+        "plugin:array-func/recommended", "prettier/babel", "plugin:prettier/recommended", "prettier"
+    ],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "sourceType": "script"
+    },
+    "plugins": ["import", "promise", "array-func", "babel", "prettier"],
+    "rules": {
+        "linebreak-style": "off",
+        "no-unused-vars": "warn",
+        "no-restricted-syntax": "off",
+        "no-console": ["warn", {
+            "allow": ["warn", "error"]
+        }],
+        "max-classes-per-file": ["error", 5],
+        "lines-between-class-members": ["error", "always", {
+            "exceptAfterSingleLine": true
+        }],
+        "curly": ["error", "all"],
+        "no-confusing-arrow": ["warn", {
+            "allowParens": false
+        }],
+        "babel/camelcase": "warn",
+        "babel/no-invalid-this": "warn",
+        "babel/semi": "warn",
+        "babel/no-unused-expressions": "warn",
+        "babel/valid-typeof": "warn"
+    },
+    "env": {
+        "browser": true,
+        "es6": true
+    }
+}

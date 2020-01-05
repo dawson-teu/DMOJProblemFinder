@@ -1,0 +1,7 @@
+node_modules/*
+build/*
+**/*.html
+**/*.json
+babel.config.js
+postcss.config.js
+stylelint.config.js
